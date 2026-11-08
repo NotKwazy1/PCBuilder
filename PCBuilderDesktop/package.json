@@ -1,0 +1,22 @@
+{
+  "name": "pc-builder-simulator",
+  "version": "1.0.0",
+  "description": "PC Builder Simulator",
+  "author": "PC Builder",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --publish never"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.example.pcbuildersimulator",
+    "productName": "PC Builder Simulator",
+    "files": ["main.js", "index.html"],
+    "win": { "target": "portable" },
+    "portable": { "artifactName": "PCBuilderSimulator.exe" }
+  }
+}
