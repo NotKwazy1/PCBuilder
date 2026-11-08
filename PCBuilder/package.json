@@ -1,0 +1,14 @@
+{
+  "name": "pc-builder-simulator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "add-android": "npx cap add android",
+    "sync": "npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2"
+  }
+}
